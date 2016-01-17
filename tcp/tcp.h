@@ -105,7 +105,7 @@ int tcp_close ();
 int send_tcp_packet (ipaddr_t dst, tcp_u16t src_port, tcp_u16t dst_port, tcp_u32t seq_nb, 
         tcp_u32t ack_nb, tcp_u8t flags, tcp_u16t win_sz, const char* data, int data_sz);
 
-//int recv_tcp_packet (ipaddr_t *src, tcp_u16t *src_port, tcp_u16t *dst_port, tcp_u32t *seq_nb
+int recv_tcp_packet (ipaddr_t *src, tcp_u16t *src_port, tcp_u16t *dst_port, tcp_u32t *seq_nb
         tcp_u32t *ack_nb, tcp_u8t *flags, tcp_u16t *win_sz, char *data, int *data_sz); 
 
 #endif
