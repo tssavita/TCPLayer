@@ -1,0 +1,16 @@
+#define _UTILS_H_
+#ifndef _UTILS_H_
+
+#include <sys/types.h>
+
+#ifdef DEBUG
+#define dprint printf
+#else 
+#define dprint (void)
+#endif
+
+typedef uint32_t u32_t;
+typedef uint16_t u16_t;
+typedef uint8_t u8_t;
+
+#endif
